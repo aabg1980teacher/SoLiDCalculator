@@ -17,6 +17,8 @@ Consideraciones
 5. Lower coupling – Less functionality in a single class will have fewer dependencies.
 6. Organization – Smaller, well-organized classes are easier to search than monolithic ones.
 
-#### Código
+#### Diagrama Solución
+
+![Diagrama de clases Aplicación SRP] (https://github.com/aabg1980teacher/SoLiDCalculator/blob/develop/diagramas/DiagramaClases%20SRP.png)
 
 
