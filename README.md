@@ -19,6 +19,6 @@ Consideraciones
 
 #### Diagrama Solución
 
-![Diagrama de clases Aplicación SRP] (https://github.com/aabg1980teacher/SoLiDCalculator/blob/develop/diagramas/DiagramaClases%20SRP.png)
+:::image type="content" source="(https://github.com/aabg1980teacher/SoLiDCalculator/blob/develop/diagramas/DiagramaClases%20SRP.png)" alt-text="SRP":::
 
 
