@@ -2,13 +2,13 @@ package co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones;
 
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
 
-public class OperacionMultiplicacion implements OperacionBinariaEntero {
-    private long multiplicar(int num1, int num2) {
-        return num1 * num2;
+public class OperacionPotencia implements OperacionBinariaEntero {
+    private long potenciar(int a, int b) {
+        return (long) Math.pow(a,b);
     }
 
     @Override
     public long realizarOperacion(int a, int b) {
-        return multiplicar(a,b);
+        return potenciar(a,b);
     }
 }

@@ -8,5 +8,8 @@ class OperacionSumaTest {
 
     @Test
     void sumar() {
+        OperacionSuma sumador = new OperacionSuma();
+        long resultado = sumador.realizarOperacion(Integer.MAX_VALUE, Integer.MAX_VALUE);
+        assertEquals((2 * Integer.MAX_VALUE), resultado);
     }
 }

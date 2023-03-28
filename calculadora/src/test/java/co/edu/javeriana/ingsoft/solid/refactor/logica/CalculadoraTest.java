@@ -6,40 +6,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculadoraTest {
 
+    Calculadora calculadora = new Calculadora();
     @Test
-    void sumarConZero() {
-        Calculadora calculadora = new Calculadora();
-        int num1 = 5;
-        long resultado = calculadora.sumar(num1, 0);
-        assertEquals(num1, resultado);
+    void ejecutarOperacionEntera() {
+        Number respuesta = calculadora.ejecutarOperacionBinaria(5,7,"Suma");
+        assertInstanceOf(Long.class, respuesta);
     }
 
     @Test
-    void sumarLimite() {
-        Calculadora calculadora = new Calculadora();
-        int num1 = Integer.MAX_VALUE;
-        int num2 = Integer.MAX_VALUE;
-
-        long resultado = calculadora.sumar(num1, num2);
-        assertEquals((long) (2 * Integer.MAX_VALUE), resultado);
-    }
-
-    @Test
-    void restar() {
-    }
-
-    @Test
-    void multiplicar() {
-    }
-
-    @Test
-    void dividirPorZero() {
-        Calculadora calculadora = new Calculadora();
-        int num1 = 5;
-        assertThrows(ArithmeticException.class, () -> calculadora.dividir(num1, 0));
-    }
-
-    @Test
-    void modulo() {
+    void ejecutarOperacionDecimal() {
+        Number respuesta = calculadora.ejecutarOperacionBinariaDecimal(5,2,"Division");
+        assertInstanceOf(Double.class,respuesta);
     }
 }

@@ -35,20 +35,11 @@ public class MenuCalculadora {
         Long resultado = null;
         Float resultadoDecimal = null;
         switch (operacion) {
-            case "+":
-                resultado = calculadora.sumar(num1, num2);
+            case "Suma", "Resta", "Multiplicacion", "Modulo", "Potencia", "Concatenacion":
+                resultado = calculadora.ejecutarOperacionBinaria(num1, num2, operacion);
                 break;
-            case "-":
-                resultado = calculadora.restar(num1, num2);
-                break;
-            case "*":
-                resultado = calculadora.multiplicar(num1, num2);
-                break;
-            case "/":
-                resultadoDecimal = calculadora.dividir(num1, num2);
-                break;
-            case "%":
-                resultado = calculadora.modular(num1, num2);
+            case "Division, Raiz":
+                resultadoDecimal = (float) calculadora.ejecutarOperacionBinariaDecimal(num1, num2, operacion);
                 break;
             default:
                 System.out.println("Operacion no valida");

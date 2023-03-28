@@ -1,27 +1,30 @@
 package co.edu.javeriana.ingsoft.solid.refactor.logica;
 
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.*;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorBase;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorDinamico;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorOperacion;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaDecimal;
 
 
 public class Calculadora {
-    public long sumar(int num1, int num2) {
-        OperacionSuma suma = new OperacionSuma();
-        return suma.sumar(num1, num2);
+    private OperacionBinariaEntero operacionBinariaEntero;
+    private OperacionBinariaDecimal operacionBinariaDecimal;
+    private CreadorBase creadorOperacion;
+
+    public Calculadora() {
+        creadorOperacion = new CreadorDinamico();
     }
-    public long restar(int num1, int num2) {
-        OperacionResta operacionResta = new OperacionResta();
-        return operacionResta.restar(num1, num2);
+
+
+    public long ejecutarOperacionBinaria(int numero1, int numero2, String operacion) {
+        operacionBinariaEntero = creadorOperacion.getOperacion(operacion);
+        return operacionBinariaEntero.realizarOperacion(numero1, numero2);
     }
-    public long multiplicar(int num1, int num2) {
-        OperacionMultiplicacion operacionMultiplicacion = new OperacionMultiplicacion();
-        return operacionMultiplicacion.multiplicar(num1, num2);
+
+    public double ejecutarOperacionBinariaDecimal(int a, int b, String operacion) {
+        operacionBinariaDecimal = creadorOperacion.getOperacionBinariaDecimal(operacion);
+        return operacionBinariaDecimal.realizarOperacion(a,b);
     }
-    public float dividir(int num1, int num2) {
-        OperacionDivision operacionDivision = new OperacionDivision();
-        return operacionDivision.dividir(num1, num2);
-    }
-    public long modular(int num1, int num2) {
-        OperacionModulo operacionModulo = new OperacionModulo();
-        return operacionModulo.modular(num1, num2);
-    }
+
 }
