@@ -1,7 +1,7 @@
-## SoLiD Calculator
+# SoLiD Calculator
 Ejemplo de aplicacion de los principios SOLID en una calculadora. Ejemplo en java de como aplicar SOLID en una aplicación más real
 
-# SRP Single Responsability Principle
+## SRP Single Responsability Principle
 
 “Una clase debe tener una sola razón para cambiar”
 Lo importante es no colocar funciones que pueden cambiar por diferentes razones en la misma clase
