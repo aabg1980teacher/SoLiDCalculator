@@ -33,13 +33,13 @@ public class MenuCalculadora {
     }
     private void realizarCalculo(String operacion, int num1, int num2) {
         Long resultado = null;
-        Float resultadoDecimal = null;
+        Double resultadoDecimal = null;
         switch (operacion) {
             case "Suma", "Resta", "Multiplicacion", "Modulo", "Potencia", "Concatenacion":
-                resultado = calculadora.ejecutarOperacionBinaria(num1, num2, operacion);
+                resultado = (Long) calculadora.ejecutarOperacion(num1, num2, operacion);
                 break;
             case "Division, Raiz":
-                resultadoDecimal = (float) calculadora.ejecutarOperacionBinariaDecimal(num1, num2, operacion);
+                resultadoDecimal = (Double) calculadora.ejecutarOperacion(num1, num2, operacion);
                 break;
             default:
                 System.out.println("Operacion no valida");

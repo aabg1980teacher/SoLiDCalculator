@@ -1,15 +1,14 @@
 package co.edu.javeriana.ingsoft.solid.refactor.logica.creacion;
 
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.*;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaDecimal;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CreadorOperacion extends CreadorBase{
 
-    private Map<String, OperacionBinariaEntero> operacionBinariaMap;
+    private Map<String, OperacionBinaria> operacionBinariaMap;
 
     private void init() {
         operacionBinariaMap.put("Suma", new OperacionSuma());
@@ -18,6 +17,7 @@ public class CreadorOperacion extends CreadorBase{
         operacionBinariaMap.put("Modulo", new OperacionModulo());
         operacionBinariaMap.put("Potencia", new OperacionPotencia());
         operacionBinariaMap.put("Concatenacion", new OperacionConcatenar());
+        operacionBinariaMap.put("Division", new OperacionDivision());
     }
     public CreadorOperacion() {
         operacionBinariaMap = new HashMap<>();
@@ -25,13 +25,7 @@ public class CreadorOperacion extends CreadorBase{
     }
 
     @Override
-    public OperacionBinariaEntero getOperacion(String operacion) {
+    public OperacionBinaria getOperacion(String operacion) {
         return operacionBinariaMap.get(operacion);
-    }
-
-    @Override
-
-    public OperacionBinariaDecimal getOperacionBinariaDecimal(String operacion) {
-        return null;
     }
 }

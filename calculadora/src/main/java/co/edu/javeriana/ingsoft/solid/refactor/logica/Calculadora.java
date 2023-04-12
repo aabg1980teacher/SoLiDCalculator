@@ -2,14 +2,12 @@ package co.edu.javeriana.ingsoft.solid.refactor.logica;
 
 import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorBase;
 import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorDinamico;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorOperacion;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaDecimal;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
 
 
 public class Calculadora {
-    private OperacionBinariaEntero operacionBinariaEntero;
-    private OperacionBinariaDecimal operacionBinariaDecimal;
+    private OperacionBinaria operacionBinaria;
+
     private CreadorBase creadorOperacion;
 
     public Calculadora() {
@@ -17,14 +15,10 @@ public class Calculadora {
     }
 
 
-    public long ejecutarOperacionBinaria(int numero1, int numero2, String operacion) {
-        operacionBinariaEntero = creadorOperacion.getOperacion(operacion);
-        return operacionBinariaEntero.realizarOperacion(numero1, numero2);
-    }
+    public Number ejecutarOperacion(Number numero1, Number numero2, String operacion) {
 
-    public double ejecutarOperacionBinariaDecimal(int a, int b, String operacion) {
-        operacionBinariaDecimal = creadorOperacion.getOperacionBinariaDecimal(operacion);
-        return operacionBinariaDecimal.realizarOperacion(a,b);
+        operacionBinaria = creadorOperacion.getOperacion(operacion);
+        return operacionBinaria.realizarOperacion(numero1, numero2);
     }
 
 }

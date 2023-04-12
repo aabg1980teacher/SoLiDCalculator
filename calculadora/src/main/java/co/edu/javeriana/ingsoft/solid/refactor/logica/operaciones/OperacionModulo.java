@@ -1,15 +1,15 @@
 package co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones;
 
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
 
-public class OperacionModulo implements OperacionBinariaEntero {
+public class OperacionModulo implements OperacionBinaria {
 
-    private long modular(int num1, int num2) {
-        return num1 % num2;
+    private Number modular(Number num1, Number num2) {
+        return num1.longValue() % num2.longValue();
     }
 
     @Override
-    public long realizarOperacion(int a, int b) {
+    public Number realizarOperacion(Number a, Number b) {
         return modular(a,b);
     }
 }

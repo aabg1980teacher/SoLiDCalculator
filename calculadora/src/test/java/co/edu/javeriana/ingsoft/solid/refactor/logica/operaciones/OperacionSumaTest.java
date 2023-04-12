@@ -9,7 +9,8 @@ class OperacionSumaTest {
     @Test
     void sumar() {
         OperacionSuma sumador = new OperacionSuma();
-        long resultado = sumador.realizarOperacion(Integer.MAX_VALUE, Integer.MAX_VALUE);
-        assertEquals((2 * Integer.MAX_VALUE), resultado);
+        long resultado = (Long) sumador.realizarOperacion(Integer.MAX_VALUE, Integer.MAX_VALUE);
+        Long expected = Long.valueOf(Integer.MAX_VALUE )*2;
+        assertEquals(expected, resultado);
     }
 }

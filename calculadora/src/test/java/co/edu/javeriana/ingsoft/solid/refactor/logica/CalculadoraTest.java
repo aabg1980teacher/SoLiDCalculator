@@ -9,13 +9,13 @@ class CalculadoraTest {
     Calculadora calculadora = new Calculadora();
     @Test
     void ejecutarOperacionEntera() {
-        Number respuesta = calculadora.ejecutarOperacionBinaria(5,7,"Suma");
+        Number respuesta = calculadora.ejecutarOperacion(5,7,"Suma");
         assertInstanceOf(Long.class, respuesta);
     }
 
     @Test
     void ejecutarOperacionDecimal() {
-        Number respuesta = calculadora.ejecutarOperacionBinariaDecimal(5,2,"Division");
+        Number respuesta = calculadora.ejecutarOperacion(5,2,"Division");
         assertInstanceOf(Double.class,respuesta);
     }
 }

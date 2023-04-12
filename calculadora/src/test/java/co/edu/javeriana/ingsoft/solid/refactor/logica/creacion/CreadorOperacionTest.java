@@ -3,8 +3,7 @@ package co.edu.javeriana.ingsoft.solid.refactor.logica.creacion;
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.OperacionDivision;
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.OperacionResta;
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.OperacionSuma;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaDecimal;
-import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinariaEntero;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -18,20 +17,20 @@ class CreadorOperacionTest {
     @Test
     void getOperacionSuma() {
 
-        OperacionBinariaEntero suma = creadorOperacion.getOperacion("Suma");
+        OperacionBinaria suma = creadorOperacion.getOperacion("Suma");
         assertInstanceOf(OperacionSuma.class, suma);
     }
 
     @Test
     void getOperacionResta() {
 
-        OperacionBinariaEntero resta = creadorOperacion.getOperacion("Resta");
+        OperacionBinaria resta = creadorOperacion.getOperacion("Resta");
         assertInstanceOf(OperacionResta.class, resta);
     }
 
     @Test
     void getOperacionDivision() {
-        OperacionBinariaDecimal division = creadorOperacion.getOperacionBinariaDecimal("Division");
+        OperacionBinaria division = creadorOperacion.getOperacion("Division");
         assertInstanceOf(OperacionDivision.class, division);
     }
 }
