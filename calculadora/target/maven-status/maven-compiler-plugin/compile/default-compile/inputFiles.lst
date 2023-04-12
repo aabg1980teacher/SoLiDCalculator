@@ -1,9 +1,11 @@
+F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\base\OperacionUnaria.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\Calculadora.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionResta.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\view\MenuCalculadora.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\facade\interfaces\CalculadoraBinaria.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\creacion\CreadorDinamico.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\base\OperacionBinaria.java
+F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\dto\EntradaDTO.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\dto\RespuestaDTO.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionPotencia.java
 F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\src\main\java\co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionSuma.java
