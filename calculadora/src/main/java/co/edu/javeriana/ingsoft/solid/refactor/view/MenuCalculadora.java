@@ -35,10 +35,10 @@ public class MenuCalculadora {
         Long resultado = null;
         Double resultadoDecimal = null;
         switch (operacion) {
-            case "Suma", "Resta", "Multiplicacion", "Modulo", "Potencia", "Concatenacion":
+            case "Suma": case "Resta": case "Multiplicacion": case "Modulo":
                 resultado = (Long) calculadora.ejecutarOperacion(num1, num2, operacion);
                 break;
-            case "Division, Raiz":
+            case "Division": case "Raiz":
                 resultadoDecimal = (Double) calculadora.ejecutarOperacion(num1, num2, operacion);
                 break;
             default:
