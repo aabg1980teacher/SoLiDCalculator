@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.OperacionSumaTest" time="0.002" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\target\test-classes;F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\target\classes;C:\Users\andyb\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\andyb\.m2\repository\org\jacoco\jacoco-maven-plugin\0.8.9\jacoco-maven-plugin-0.8.9.jar;C:\Users\andyb\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\andyb\.m2\repository\org\apache\maven\shared\file-management\1.2.1\file-management-1.2.1.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-plugin-api\2.0.6\maven-plugin-api-2.0.6.jar;C:\Users\andyb\.m2\repository\org\apache\maven\shared\maven-shared-io\1.1\maven-shared-io-1.1.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-artifact\2.0.2\maven-artifact-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.2\maven-artifact-manager-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.2\maven-repository-metadata-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\andyb\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\andyb\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\andyb\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\andyb\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.agent\0.8.9\org.jacoco.agent-0.8.9-runtime.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.core\0.8.9\org.jacoco.core-0.8.9.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.report\0.8.9\org.jacoco.report-0.8.9.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\andyb\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\andyb\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\andyb\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="D:\Programas\Java\jdk\openjdk-11+28_windows-x64_bin\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\andyb\AppData\Local\Temp\surefire14817980185906519246\surefirebooter10575951340882607926.jar C:\Users\andyb\AppData\Local\Temp\surefire14817980185906519246 2023-05-09T14-54-17_290-jvmRun1 surefire15473233529061334241tmp surefire_04026852188233212491tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\target\test-classes;F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora\target\classes;C:\Users\andyb\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\andyb\.m2\repository\org\jacoco\jacoco-maven-plugin\0.8.9\jacoco-maven-plugin-0.8.9.jar;C:\Users\andyb\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\andyb\.m2\repository\org\apache\maven\shared\file-management\1.2.1\file-management-1.2.1.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-plugin-api\2.0.6\maven-plugin-api-2.0.6.jar;C:\Users\andyb\.m2\repository\org\apache\maven\shared\maven-shared-io\1.1\maven-shared-io-1.1.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-artifact\2.0.2\maven-artifact-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.2\maven-artifact-manager-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.2\maven-repository-metadata-2.0.2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\andyb\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\andyb\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\andyb\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\andyb\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar;C:\Users\andyb\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.agent\0.8.9\org.jacoco.agent-0.8.9-runtime.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.core\0.8.9\org.jacoco.core-0.8.9.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm\9.5\asm-9.5.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm-commons\9.5\asm-commons-9.5.jar;C:\Users\andyb\.m2\repository\org\ow2\asm\asm-tree\9.5\asm-tree-9.5.jar;C:\Users\andyb\.m2\repository\org\jacoco\org.jacoco.report\0.8.9\org.jacoco.report-0.8.9.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\andyb\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\andyb\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\andyb\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\andyb\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\andyb"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2018-09-25"/>
+    <property name="java.home" value="D:\Programas\Java\jdk\openjdk-11+28_windows-x64_bin\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\andyb\AppData\Local\Temp\surefire14817980185906519246\surefirebooter10575951340882607926.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11+28"/>
+    <property name="user.name" value="andyb"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\andyb\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\andyb\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.3.3"/>
+    <property name="java.version" value="11"/>
+    <property name="user.dir" value="F:\Documentos\Personal\2023\PUJ\IngSoft 2023-1\Desarrollo\SOLID\SoLiDCalculator\calculadora"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="D:\Programas\Java\jdk\openjdk-11+28_windows-x64_bin\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Programas\Java\jdk\openjdk-11+28_windows-x64_bin\jdk-11\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;D:\Programas\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\TortoiseSVN\bin;C:\Users\andyb\AppData\Local\Microsoft\WindowsApps;D:\Programas\Microsoft VS Code\bin;C:\Users\andyb\.dotnet\tools;C:\Program Files (x86)\Sophos\Sophos SSL VPN Client\bin;D:\Programas\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;C:\Users\andyb\AppData\Roaming\npm;C:\Users\andyb\AppData\Local\JetBrains\Toolbox\scripts;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11+28"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="sumar" classname="co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.OperacionSumaTest" time="0"/>
+</testsuite>

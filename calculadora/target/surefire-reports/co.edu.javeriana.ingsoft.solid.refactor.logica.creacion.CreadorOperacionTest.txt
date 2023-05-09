@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorOperacionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in co.edu.javeriana.ingsoft.solid.refactor.logica.creacion.CreadorOperacionTest

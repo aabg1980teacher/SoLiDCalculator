@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CreadorOperacion.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">calculadora</a> &gt; <a href="index.source.html" class="el_package">co.edu.javeriana.ingsoft.solid.refactor.logica.creacion</a> &gt; <span class="el_source">CreadorOperacion.java</span></div><h1>CreadorOperacion.java</h1><pre class="source lang-java linenums">package co.edu.javeriana.ingsoft.solid.refactor.logica.creacion;
+
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.*;
+import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CreadorOperacion extends CreadorBase{
+
+    private Map&lt;String, OperacionBinaria&gt; operacionBinariaMap;
+
+    private void init() {
+<span class="nc" id="L14">        operacionBinariaMap.put(&quot;Suma&quot;, new OperacionSuma());</span>
+<span class="nc" id="L15">        operacionBinariaMap.put(&quot;Resta&quot;, new OperacionResta());</span>
+<span class="nc" id="L16">        operacionBinariaMap.put(&quot;Multiplicacion&quot;, new OperacionMultiplicacion());</span>
+<span class="nc" id="L17">        operacionBinariaMap.put(&quot;Modulo&quot;, new OperacionModulo());</span>
+<span class="nc" id="L18">        operacionBinariaMap.put(&quot;Potencia&quot;, new OperacionPotencia());</span>
+<span class="nc" id="L19">        operacionBinariaMap.put(&quot;Concatenacion&quot;, new OperacionConcatenar());</span>
+<span class="nc" id="L20">        operacionBinariaMap.put(&quot;Division&quot;, new OperacionDivision());</span>
+<span class="nc" id="L21">    }</span>
+<span class="nc" id="L22">    public CreadorOperacion() {</span>
+<span class="nc" id="L23">        operacionBinariaMap = new HashMap&lt;&gt;();</span>
+<span class="nc" id="L24">        init();</span>
+<span class="nc" id="L25">    }</span>
+
+    @Override
+    public OperacionBinaria getOperacion(String operacion) {
+<span class="nc" id="L29">        return operacionBinariaMap.get(operacion);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
