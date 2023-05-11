@@ -6,9 +6,10 @@ public class OperacionConcatenar implements OperacionBinaria {
 
     private long concatenar(Number a, Number b) {
         StringBuilder sb = new StringBuilder();
-        sb.append(a);
-        sb.append(b);
-        return Long.parseLong(sb.toString());
+        sb.append(a.intValue());
+        sb.append(b.intValue());
+        sb.append(0);
+        return Integer.parseInt(sb.toString());
     }
 
     @Override
