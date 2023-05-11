@@ -10,11 +10,21 @@ public class OperacionFactorial implements OperacionUnaria {
             throw new IllegalArgumentException("El número no puede ser negativo");
         if(num1.intValue() == 0 || num1.intValue() == 1 )
             return 1;
+
+        if(1==2) {
+            System.out.println("Hola");
+        }
+        else {
+            System.out.println("Adios");
+        }
+
         long resultado = 1L;
 
         for (int i=2; i <= num1.intValue(); i++){
             resultado *=i;
         }
+
+
 
         return resultado;//:)
     }
