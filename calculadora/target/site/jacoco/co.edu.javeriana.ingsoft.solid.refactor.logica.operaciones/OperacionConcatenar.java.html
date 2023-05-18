@@ -6,14 +6,15 @@ import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.Operacion
 
     private long concatenar(Number a, Number b) {
 <span class="nc" id="L8">        StringBuilder sb = new StringBuilder();</span>
-<span class="nc" id="L9">        sb.append(a);</span>
-<span class="nc" id="L10">        sb.append(b);</span>
-<span class="nc" id="L11">        return Long.parseLong(sb.toString());</span>
+<span class="nc" id="L9">        sb.append(a.intValue());</span>
+<span class="nc" id="L10">        sb.append(b.intValue());</span>
+<span class="nc" id="L11">        sb.append(0);</span>
+<span class="nc" id="L12">        return Integer.parseInt(sb.toString());</span>
     }
 
     @Override
     public Number realizarOperacion(Number a, Number b) {
-<span class="nc" id="L16">        return concatenar(a,b);</span>
+<span class="nc" id="L17">        return concatenar(a,b);</span>
     }
 
 }

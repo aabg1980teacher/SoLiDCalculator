@@ -5,16 +5,16 @@ import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.Operacion
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-<span class="fc" id="L8">public class CreadorDinamico extends CreadorBase {</span>
+<span class="nc" id="L8">public class CreadorDinamico extends CreadorBase {</span>
 
 
     @Override
     public OperacionBinaria getOperacion(String operacion) {
         try {
-<span class="fc" id="L14">            Class operacionBinaria = Class.forName(&quot;co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.Operacion&quot; + operacion);</span>
-<span class="fc" id="L15">            Constructor&lt;?&gt; constructor = operacionBinaria.getConstructor(null);</span>
-<span class="fc" id="L16">            OperacionBinaria resultado = (OperacionBinaria) constructor.newInstance(null);</span>
-<span class="fc" id="L17">            return resultado;</span>
+<span class="nc" id="L14">            Class operacionBinaria = Class.forName(&quot;co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.Operacion&quot; + operacion);</span>
+<span class="nc" id="L15">            Constructor&lt;?&gt; constructor = operacionBinaria.getConstructor(null);</span>
+<span class="nc" id="L16">            OperacionBinaria resultado = (OperacionBinaria) constructor.newInstance(null);</span>
+<span class="nc" id="L17">            return resultado;</span>
 <span class="nc" id="L18">        } catch (ClassNotFoundException e) {</span>
 <span class="nc" id="L19">            e.printStackTrace();</span>
 

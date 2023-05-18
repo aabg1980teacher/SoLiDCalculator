@@ -3,11 +3,17 @@ co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionPotencia.cla
 co\edu\javeriana\ingsoft\solid\refactor\logica\dto\EntradaDTO.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\creacion\CreadorBase.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionSuma.class
+co\edu\javeriana\ingsoft\solid\refactor\logica\Calculadora.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\creacion\CreadorDinamico.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionConcatenar.class
+co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionFactorial.class
+co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionResta.class
+co\edu\javeriana\ingsoft\solid\refactor\main\App.class
+co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionModulo.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionMultiplicacion.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\OperacionDivision.class
 co\edu\javeriana\ingsoft\solid\old\Calculadora.class
+co\edu\javeriana\ingsoft\solid\refactor\view\MenuCalculadora.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\creacion\CreadorOperacion.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\operaciones\base\OperacionBinaria.class
 co\edu\javeriana\ingsoft\solid\refactor\logica\facade\interfaces\CalculadoraBinaria.class

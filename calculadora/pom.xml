@@ -44,6 +44,13 @@
     </dependency>
   </dependencies>
 
+  <pluginRepositories>
+    <pluginRepository>
+      <id>maven2</id>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -74,9 +81,17 @@
             </execution>
         </executions>
       </plugin>
+      <!--
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.1.2184</version>
+      </plugin>
+      -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.9</version>
         <executions>
           <execution>
             <id>default-prepare-agent</id>

@@ -10,15 +10,15 @@ public class Calculadora {
 
     private CreadorBase creadorOperacion;
 
-<span class="fc" id="L13">    public Calculadora() {</span>
-<span class="fc" id="L14">        creadorOperacion = new CreadorDinamico();</span>
-<span class="fc" id="L15">    }</span>
+<span class="nc" id="L13">    public Calculadora() {</span>
+<span class="nc" id="L14">        creadorOperacion = new CreadorDinamico();</span>
+<span class="nc" id="L15">    }</span>
 
 
     public Number ejecutarOperacion(Number numero1, Number numero2, String operacion) {
 
-<span class="fc" id="L20">        operacionBinaria = creadorOperacion.getOperacion(operacion);</span>
-<span class="fc" id="L21">        return operacionBinaria.realizarOperacion(numero1, numero2);</span>
+<span class="nc" id="L20">        operacionBinaria = creadorOperacion.getOperacion(operacion);</span>
+<span class="nc" id="L21">        return operacionBinaria.realizarOperacion(numero1, numero2);</span>
     }
 
 }
