@@ -10,9 +10,13 @@ public class MenuCalculadora {
         calculadora = new Calculadora();
     }
     public void ejecutarCalculadora() {
+
         String operacion = "";
+
         try (Scanner sc = new Scanner(System.in)) {
+
             while(!operacion.equalsIgnoreCase("exit")) {
+
                 System.out.println("Bienvenido a la calculadora !!");
                 int num1, num2;
                 System.out.println("Ingrese el primer numero");
@@ -32,20 +36,25 @@ public class MenuCalculadora {
         System.out.println("Gracias por usar la calculadora");
     }
     private void realizarCalculo(String operacion, int num1, int num2) {
+
         Long resultado = null;
         Double resultadoDecimal = null;
+
         switch (operacion) {
+
             case "Suma": case "Resta": case "Multiplicacion": case "Modulo":
                 resultado = (Long) calculadora.ejecutarOperacion(num1, num2, operacion);
+                System.out.println("El resultado de la operacion "+ operacion + " es " + resultado);
                 break;
-            case "Division": case "Raiz":
-                resultadoDecimal = (Double) calculadora.ejecutarOperacion(num1, num2, operacion);
+
+            case "Division": case "Raiz": case "Logaritmo":
+                resultadoDecimal = ((Number) calculadora.ejecutarOperacion(num1, num2, operacion)).doubleValue();
+                System.out.println("El resultado de la operacion "+ operacion + " es " + resultadoDecimal);
                 break;
+
             default:
                 System.out.println("Operacion no valida");
                 break;
         }
-        System.out.println("El resultado de la operacion " + operacion + " es "
-                + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultado));
     }
 }
