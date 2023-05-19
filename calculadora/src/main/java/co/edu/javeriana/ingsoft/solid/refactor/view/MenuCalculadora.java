@@ -32,20 +32,27 @@ public class MenuCalculadora {
         System.out.println("Gracias por usar la calculadora");
     }
     private void realizarCalculo(String operacion, int num1, int num2) {
-        Long resultado = null;
+        Long resultado = 0L;
         Double resultadoDecimal = null;
+        Integer resultadoEntero = 0; // Variable para guardar el resultado entero del MCU
         switch (operacion) {
             case "Suma": case "Resta": case "Multiplicacion": case "Modulo":
                 resultado = (Long) calculadora.ejecutarOperacion(num1, num2, operacion);
+                System.out.println("El resultado de la operacion " + operacion + " es "
+                        + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultado));
                 break;
             case "Division": case "Raiz":
                 resultadoDecimal = (Double) calculadora.ejecutarOperacion(num1, num2, operacion);
+                System.out.println("El resultado de la operacion " + operacion + " es "
+                        + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultadoDecimal));
+                break;
+            case "MCU": // Agregar el caso "MCU"
+                resultadoEntero = (Integer)calculadora.ejecutarOperacion(num1, num2,operacion);
+                System.out.println("El resultado de la operacion " + operacion + " es "
+                        + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultadoEntero));
                 break;
             default:
                 System.out.println("Operacion no valida");
                 break;
         }
-        System.out.println("El resultado de la operacion " + operacion + " es "
-                + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultado));
-    }
 }
