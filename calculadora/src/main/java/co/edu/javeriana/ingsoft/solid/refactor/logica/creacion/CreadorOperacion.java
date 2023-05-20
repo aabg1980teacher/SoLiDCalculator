@@ -1,4 +1,4 @@
-package co.edu.javeriana.ingsoft.solid.refactor.logica.creacion;
+/*package co.edu.javeriana.ingsoft.solid.refactor.logica.creacion;
 
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.*;
 import co.edu.javeriana.ingsoft.solid.refactor.logica.operaciones.base.OperacionBinaria;
@@ -28,4 +28,4 @@ public class CreadorOperacion extends CreadorBase{
     public OperacionBinaria getOperacion(String operacion) {
         return operacionBinariaMap.get(operacion);
     }
-}
+}*/

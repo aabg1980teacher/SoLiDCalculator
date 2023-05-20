@@ -18,12 +18,21 @@ public class MenuCalculadora {
                 System.out.println("Ingrese el primer numero");
                 num1 = sc.nextInt();
 
-                System.out.println("Ingrese el segundo numero");
-                num2 = sc.nextInt();
                 System.out.println("Ingrese la operacion a realizar");
                 operacion = sc.next();
-                realizarCalculo(operacion, num1, num2);
-            }
+
+                if(operacion.equals("Absoluto"))
+                {
+                    realizarCalculoU(operacion,num1);
+                }
+                else{
+
+                    System.out.println("Ingrese el segundo numero");
+                    num2 = sc.nextInt();
+
+                    realizarCalculo(operacion, num1, num2);
+                }}
+
         }
         catch (Exception e) {
             System.err.println("Error al ejecutar la calculadora " + e.getMessage());
@@ -46,6 +55,19 @@ public class MenuCalculadora {
                 break;
         }
         System.out.println("El resultado de la operacion " + operacion + " es "
-                + (operacion.equalsIgnoreCase("/") ? resultadoDecimal : resultado));
+                + ((operacion.equalsIgnoreCase("Division") || operacion.equalsIgnoreCase("Raiz"))? resultadoDecimal : resultado));
+    }
+    private void realizarCalculoU(String operacion, int num1) {
+        Long resultado = null;
+        switch (operacion) {
+            case "Absoluto":
+                resultado = (Long) calculadora.ejecutarunaria(num1, operacion);
+                break;
+            default:
+                System.out.println("Operacion no valida");
+                break;
+        }
+        System.out.println("El resultado de la operacion " + operacion + " es "
+                + resultado);
     }
 }
